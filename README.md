@@ -1,12 +1,12 @@
-## Judul : SI-Arsip (Sistem Informasi Arsip Surat Desa Karangduren)
+# Judul : SI-Arsip (Sistem Informasi Arsip Surat Desa Karangduren)
 
-## 🎯 Tujuan
+# 🎯 Tujuan
 Aplikasi ini dibuat untuk membantu perangkat desa dalam **mengelola arsip surat** secara digital agar lebih rapi, mudah dicari, dan aman.  
 Dengan adanya sistem ini, pengarsipan tidak lagi dilakukan secara manual menggunakan map atau rak, tetapi terkomputerisasi sehingga menghemat waktu dan tenaga.
 
 ---
 
-## ✨ Fitur Utama
+# ✨ Fitur Utama
 - 📂 **Manajemen Arsip Surat**
   - Unggah, lihat, unduh, dan hapus file PDF.
   - Pencarian arsip berdasarkan judul.
@@ -14,8 +14,6 @@ Dengan adanya sistem ini, pengarsipan tidak lagi dilakukan secara manual menggun
   - CRUD kategori (ID otomatis).
 - 👀 **Pratinjau PDF**
   - Bisa dilihat langsung tanpa diunduh (inline iframe).
-- 🔔 **Notifikasi**
-  - Sistem notifikasi global (toast session).
 - 🗑 **Konfirmasi Hapus**
   - Modal konfirmasi sebelum menghapus data.
 - ℹ️ **About Page**
@@ -87,19 +85,19 @@ Buka: http://127.0.0.1:8000
 
 
 ### 7. Screenshot
-*Arsip
+### Arsip
 ![Arsip](screenshot/arsip-index.png)
 ![Tambah Arsip](screenshot/arsip-tambah.png)
 ![Hapus Arsip](screenshot/arsip-hapus.png)
 ![Lihat Detail Arsip](screenshot/arsip-lihat.png)
 ![Edit Arsip](screenshot/arsip-edit.png)
 
-* Kategori
+### Kategori
 ![Kategori](screenshot/kategori-index.png)
 ![Tambah Kategori](screenshot/kategori-tambah.png)
 ![Edit Kategori](screenshot/kategori-edit.png)
 
-* About
+### About
 ![About](screenshot/about.png)
 
 ---
