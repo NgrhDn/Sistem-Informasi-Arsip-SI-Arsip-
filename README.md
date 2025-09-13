@@ -1,29 +1,27 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Judul : SI-Arsip (Sistem Informasi Arsip Surat Desa Karangduren)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🎯 Tujuan
+Aplikasi ini dibuat untuk membantu perangkat desa dalam **mengelola arsip surat** secara digital agar lebih rapi, mudah dicari, dan aman.  
+Dengan adanya sistem ini, pengarsipan tidak lagi dilakukan secara manual menggunakan map atau rak, tetapi terkomputerisasi sehingga menghemat waktu dan tenaga.
 
 ---
 
-## SI-Arsip (Arsip Surat Desa Karangduren)
+## ✨ Fitur Utama
+- 📂 **Manajemen Arsip Surat**
+  - Unggah, lihat, unduh, dan hapus file PDF.
+  - Pencarian arsip berdasarkan judul.
+- 🗂 **Kategori Surat**
+  - CRUD kategori (ID otomatis).
+- 👀 **Pratinjau PDF**
+  - Bisa dilihat langsung tanpa diunduh (inline iframe).
+- 🔔 **Notifikasi**
+  - Sistem notifikasi global (toast session).
+- 🗑 **Konfirmasi Hapus**
+  - Modal konfirmasi sebelum menghapus data.
+- ℹ️ **About Page**
+  - Menampilkan identitas pembuat dan tanggal pembuatan.
+
+---
 
 ### 1. Kebutuhan
 * PHP 8.2+
@@ -87,37 +85,61 @@ php artisan serve
 ```
 Buka: http://127.0.0.1:8000
 
-### 7. Fitur Utama
-| Fitur | Deskripsi |
-|-------|-----------|
-| Arsip Surat | Unggah, lihat, unduh, hapus, cari berdasarkan judul |
-| Kategori Surat | CRUD kategori (ID otomatis) |
-| Pratinjau PDF | Inline via iframe (route preview) |
-| Notifikasi | Toast global session-based |
-| Konfirmasi Hapus | Modal kustom floating |
-| About | Menampilkan identitas pembuat & tanggal |
 
-### 7.1 Dummy Data Arsip Surat
+### 7. Screenshot
+*Arsip
+![Arsip](screenshot/arsip-index.png)
+![Tambah Arsip](screenshot/arsip-tambah.png)
+![Hapus Arsip](screenshot/arsip-hapus.png)
+![Lihat Detail Arsip](screenshot/arsip-lihat.png)
+![Edit Arsip](screenshot/arsip-edit.png)
+
+* Kategori
+![Kategori](screenshot/kategori-index.png)
+![Tambah Kategori](screenshot/kategori-tambah.png)
+![Edit Kategori](screenshot/kategori-edit.png)
+
+* About
+![About](screenshot/about.png)
+
+---
+
+### 8. Dummy Data Arsip Surat
 Kumpulan contoh/dummy file PDF untuk diarsipkan dapat diakses di Google Drive:
 
 https://drive.google.com/drive/folders/1RVz1JbeoEF4AQjOu5U-GVtCi4HOdXzec?usp=drive_link
 
 Unduh beberapa file PDF tersebut lalu unggah melalui menu "Arsipkan Surat..." untuk pengujian.
 
-### 8. Catatan Pencarian
+### 9. Catatan Pencarian
 Pencarian surat mengikuti requirement.
 
-### 9. Testing Singkat
+### 10. Testing Singkat
 Unggah PDF contoh kecil (<2MB). Jika pratinjau tidak muncul, cek:
 * Symlink storage sudah dibuat
 * File berada di `storage/app/public/pdf`
 
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
+
+## About Laravel
+
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
 ---
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
