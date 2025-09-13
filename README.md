@@ -25,6 +25,7 @@ Dengan adanya sistem ini, pengarsipan tidak lagi dilakukan secara manual menggun
 * PHP 8.2+
 * MySQL / MariaDB (atau sesuaikan `.env` bila pakai SQLite)
 * Composer
+* Laravel
 
 ### 2. Persiapan Database (MySQL)
 Jika database `si_arsip` belum ada, bisa buat manual:
